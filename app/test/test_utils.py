@@ -22,13 +22,14 @@ def test_discount_price_55_130():
 
 def test_discount_price_32e52_55():
     # Arrange 
-    price = '32.52€'
+    price = '32.55€'
     discount = 55
     #Act   ---->   Assert
-    assert utils.discount_price(price,discount) == '17.88€'
+    assert utils.discount_price(price,discount) == '14.65€'
 
 def test_discount_prices_13e66_52e16_30():
+        # Arrange 
     prices = ['13.66€','52.16€']
     discount = 30
-
-    assert utils.discount_prices(prices,discount) == ['4.09€','15.64€']
+    #Act   ---->   Assert
+    assert utils.discount_prices(prices,discount) == ['9.56€','36.51€']

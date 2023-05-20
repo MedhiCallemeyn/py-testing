@@ -15,5 +15,5 @@ def discount_price(price:str,discount:float,currency:str = '€')-> str:
 
 
 def discount_prices(prices:list[str],discount:float,currency:str = '€')->list[str]:
-    return [discount_price(price,discount,currency) for price in list]
+    return [discount_price(price,discount,currency) for price in prices]
 
